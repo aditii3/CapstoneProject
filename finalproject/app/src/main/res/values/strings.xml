@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MyReddits</string>
+    <string name="welcome_1">Welcome To MyReddits!</string>
+    <string name="welcome_desc_1">Easily search and subscribe to your favourite subreddit to get top posts from your selected subreddit.\nSee subscribed subreddits by opening drawer.\nRefresh posts just by swiping from top.</string>
+    <string name="welcome_2">Easy navigation and usage!</string>
+    <string name="welcome_desc_2">Click on any post to get a detailed view.</string>
+    <string name="welcome_3">Start Exploring!</string>
+    <string name="welcome_desc_3">Click on image to see full image.\nClick on title to see more information.</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="post_img_desc">Subreddit image</string>
+    <string name="post_main_pref_key">postMain</string>
+    <string name="post_position">position</string>
+    <string name="selected_subreddit">subreddit</string>
+    <string name="action_share">share</string>
+    <string name="img_desc">post image</string>
+    <string name="transition_img">post_img</string>
+    <string name="search">Search</string>
+    <string name="comments">Comments- %1$d</string>
+    <string name="score">Score- %1$d</string>
+    <string name="author">Author- %1$s</string>
+    <string name="favourites">Favourite Subreddits</string>
+    <string name="not_available">No posts available!!!</string>
+    <string name="subscribe">subscribe</string>
+    <string name="subscribers">%1$s Subscribers</string>
+    <string name="change_subscription">change subscription</string>
+    <string name="post_type_desc">Play video</string>
+    <string name="introduction_image">Introduction Image</string>
+    <string name="close">close</string>
+    <string name="no_internet">Make sure you have a working internet connection</string>
+    <string name="post_img_transition">object_image</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/reddit_post_img"
+        android:layout_width="@dimen/post_item_img"
+        android:layout_height="@dimen/post_item_img"
+        android:contentDescription="@string/post_img_desc"
+        android:transitionName="@string/post_img_transition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <TextView
+        android:id="@+id/post_link_tv"
+        style="@style/MyTheme.TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/reddit_post_img"
+        app:layout_constraintRight_toLeftOf="@id/post_domain_tv"
+        app:layout_constraintStart_toEndOf="@+id/reddit_post_img"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Post" />
+
+    <TextView
+        android:id="@+id/post_domain_tv"
+        style="@style/MyTheme.TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="domain link" />
+
+
+    <TextView
+        android:id="@+id/post_content_tv"
+        style="@style/MyTheme.TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginStart="@dimen/post_item_img"
+        android:layout_marginTop="@dimen/default_margin"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@id/post_domain_tv"
+        tools:text="Content displayded" />
+
+
+    <TextView
+        android:id="@+id/post_cmnt_count_tv"
+        style="@style/MyTheme.TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintStart_toEndOf="@id/reddit_post_img"
+        app:layout_constraintTop_toBottomOf="@id/post_content_tv"
+        tools:text="12 comments" />
+
+    <TextView
+        android:id="@+id/post_score_tv"
+        style="@style/MyTheme.TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/post_content_tv"
+        tools:text="Post score" />
+
+    <TextView
+        android:id="@+id/post_author_tv"
+        style="@style/MyTheme.TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintStart_toEndOf="@id/reddit_post_img"
+        app:layout_constraintTop_toBottomOf="@id/post_cmnt_count_tv"
+        tools:text="Post author" />
+
+    <TextView
+        android:id="@+id/post_time_tv"
+        style="@style/MyTheme.TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/post_score_tv"
+        tools:text="Post time" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toEndOf="@id/reddit_post_img"
+        app:layout_constraintTop_toBottomOf="@id/post_author_tv" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "63505511416",
+    "firebase_url": "https://myreddits-4d54b.firebaseio.com",
+    "project_id": "myreddits-4d54b",
+    "storage_bucket": "myreddits-4d54b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63505511416:android:71595ae4ce91bae6",
+        "android_client_info": {
+          "package_name": "com.example.android.myreddits"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63505511416-e8ulhha25bbfi93l160g7ae17sskub6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJlvOQuPxmuOvdyVq7eUjkg73_9Q248Mc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-9720097697712748~6759372633"
+    }
+  ],
+  "configuration_version": "1"
+}

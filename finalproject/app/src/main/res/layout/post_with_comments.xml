@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin"
+    android:elevation="@dimen/card_elevation"
+    app:cardBackgroundColor="@color/bg"
+    app:cardCornerRadius="@dimen/card_radius">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/default_margin">
+
+        <TextView
+            android:id="@+id/cmt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/heading"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/cmt_author"
+            style="@style/MyTheme.TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="@id/cmt_title"
+            app:layout_constraintTop_toBottomOf="@id/cmt_title"
+            tools:text="author" />
+
+        <TextView
+            android:id="@+id/cmt_time"
+            style="@style/MyTheme.TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintTop_toBottomOf="@id/cmt_author"
+            tools:text="time" />
+
+        <TextView
+            android:id="@+id/cmt_domain"
+            style="@style/MyTheme.TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cmt_title"
+            tools:text="domain" />
+
+        <TextView
+            android:id="@+id/cmt_comments"
+            style="@style/MyTheme.TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="@id/cmt_author"
+            app:layout_constraintTop_toBottomOf="@id/cmt_time"
+            tools:text="2cmnts" />
+
+        <TextView
+            android:id="@+id/cmt_score"
+            style="@style/MyTheme.TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cmt_time"
+            tools:text="20scr" />
+
+        <ProgressBar
+            android:id="@+id/loading_pb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/cmt_comments" />
+
+        <LinearLayout
+            android:id="@+id/comments_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/loading_pb" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
