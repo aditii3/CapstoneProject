@@ -57,7 +57,7 @@ public class SearchAdapter extends CursorAdapter {
 
                 if (Util.isNetworkAvailable(context)) {
                     client.getSubredditPosts(s);
-                    Toast.makeText(context, "Subscribed to " + s, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, context.getString(R.string.subscribed) + s, Toast.LENGTH_SHORT).show();
                     context.getContentResolver().delete(RedditContract.SearchEntry.buildUriWithRowId(cursor.getColumnIndex(RedditContract.SearchEntry.COLUMN_NAME)), RedditContract.SearchEntry.COLUMN_NAME + "=?", new String[]{holder.subredditName.getText().toString()});
                     context.getContentResolver().notifyChange(RedditContract.SearchEntry.CONTENT_URI, null);
                 } else {

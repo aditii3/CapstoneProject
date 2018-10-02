@@ -62,6 +62,7 @@
         android:translationZ="@dimen/fab_elevation"
         app:backgroundTint="@color/colorAccent"
         app:fabSize="normal"
+        android:contentDescription="@string/share_post"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|right|end" />
 
